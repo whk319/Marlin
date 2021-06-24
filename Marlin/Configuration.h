@@ -2160,7 +2160,7 @@
 //  If CLOCKWISE normally moves DOWN this makes it go UP.
 //  If CLOCKWISE normally moves UP this makes it go DOWN.
 //
-//#define REVERSE_MENU_DIRECTION
+#define REVERSE_MENU_DIRECTION
 
 //
 // This option reverses the encoder direction for Select Screen.
@@ -2175,7 +2175,7 @@
 //
 // Add individual axis homing items (Home X, Home Y, and Home Z) to the LCD menu.
 //
-//#define INDIVIDUAL_AXIS_HOMING_MENU
+#define INDIVIDUAL_AXIS_HOMING_MENU
 
 //
 // SPEAKER/BUZZER
@@ -2364,7 +2364,7 @@
 // RepRapDiscount FULL GRAPHIC Smart Controller
 // https://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller
 //
-//#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
+#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
 
 //
 // K.3D Full Graphic Smart Controller
@@ -2579,12 +2579,12 @@
 //
 // Touch-screen LCD for Anycubic printers
 //
-#define ANYCUBIC_LCD_I3MEGA
+//#define ANYCUBIC_LCD_I3MEGA
 //#define ANYCUBIC_LCD_CHIRON
-#if EITHER(ANYCUBIC_LCD_I3MEGA, ANYCUBIC_LCD_CHIRON)
-  #define LCD_SERIAL_PORT 3  // Default is 3 for Anycubic
-  #define ANYCUBIC_LCD_DEBUG
-#endif
+//#if EITHER(ANYCUBIC_LCD_I3MEGA, ANYCUBIC_LCD_CHIRON)
+#define LCD_SERIAL_PORT 3  // Default is 3 for Anycubic
+  //#define ANYCUBIC_LCD_DEBUG
+//#endif
 
 //
 // 320x240 Nextion 2.8" serial TFT Resistive Touch Screen NX3224T028
@@ -2598,7 +2598,7 @@
 // Third-party or vendor-customized controller interfaces.
 // Sources should be installed in 'src/lcd/extui'.
 //
-#define EXTENSIBLE_UI
+//#define EXTENSIBLE_UI
 
 #if ENABLED(EXTENSIBLE_UI)
   //#define EXTUI_LOCAL_BEEPER // Enables use of local Beeper pin with external display
