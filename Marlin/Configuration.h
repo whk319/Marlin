@@ -23,7 +23,7 @@
 
 #define CONFIG_EXAMPLES_DIR "AnyCubic/i3 Mega"
 
-//#define I3MEGA_HAS_BLTOUCH
+#define I3MEGA_HAS_BLTOUCH
 #define I3MEGA_HAS_TMC2208
 
 /**
@@ -74,7 +74,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(Herb, default with TMC2208)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(Herb, default with TMC2208 + BLTOUCH)" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -832,7 +832,12 @@
 //#define I_MAX_ENDSTOP_INVERTING false // Set to true to invert the logic of the endstop.
 //#define J_MAX_ENDSTOP_INVERTING false // Set to true to invert the logic of the endstop.
 //#define K_MAX_ENDSTOP_INVERTING false // Set to true to invert the logic of the endstop.
-#define Z_MIN_PROBE_ENDSTOP_INVERTING true // Set to true to invert the logic of the probe.
+
+#if ENABLED(I3MEGA_HAS_BLTOUCH)
+  #define Z_MIN_PROBE_ENDSTOP_INVERTING false // Set to true to invert the logic of the probe.
+#else
+  #define Z_MIN_PROBE_ENDSTOP_INVERTING true // Set to true to invert the logic of the probe.
+#endif
 
 /**
  * Stepper Drivers
