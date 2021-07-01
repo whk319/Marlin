@@ -101,13 +101,17 @@
 // Limit Switches
 //
 
-  #define Y_STOP_PIN                          42
-  #define Z2_MIN_PIN                          43
-  #define Z_MIN_PROBE_PIN                     2
-  #define FIL_RUNOUT_PIN                      19
-  #define BEEPER_PIN                          31
-  #define SD_DETECT_PIN                       49
+#define X_MIN_PIN                            3
+#define Y_MIN_PIN                            42
+#define Z_MIN_PIN                            18
+#define Z2_MIN_PIN                           43
 
+#define Z_MIN_PROBE_PIN                      2
+
+#define FIL_RUNOUT_PIN                      19
+//#define BEEPER_PIN                          31
+#define BUZZER                              31
+#define SD_DETECT_PIN                       49
 
 #include "pins_RAMPS.h"
 
