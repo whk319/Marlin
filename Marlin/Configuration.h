@@ -23,6 +23,9 @@
 
 #define CONFIG_EXAMPLES_DIR "Creality/Ender-3 Max"
 
+// Enable this option for BLTouch support
+//#define ENABLE_BLTOUCH_PROBE
+
 /**
  * Configuration.h
  *
