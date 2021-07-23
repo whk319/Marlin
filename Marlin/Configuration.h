@@ -26,6 +26,9 @@
 // Enable this option for BLTouch support
 //#define ENABLE_BLTOUCH_PROBE
 
+// Enable this option for Filament Runout support
+//#define ENABLE_FILAMENT_RUNOUT
+
 /**
  * Configuration.h
  *
