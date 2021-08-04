@@ -154,7 +154,7 @@
  * The new version is to be identified by a "TRIGORILLA1.1" lettering
  * on the upper left of the PCB silkscreen.
  */
-#define TRIGORILLA_VERSION 0
+#define TRIGORILLA_VERSION 1
 
 // Choose the name from boards.h that matches your setup
 #if TRIGORILLA_VERSION == 1
