@@ -1658,7 +1658,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR false
+#define INVERT_E0_DIR true
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
@@ -1703,8 +1703,8 @@
 #define Y_BED_SIZE 235
 
 // Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
-#define X_MIN_POS -9
-#define Y_MIN_POS 0
+#define X_MIN_POS -3
+#define Y_MIN_POS -20
 #define Z_MIN_POS 0
 #define X_MAX_POS 247
 #define Y_MAX_POS Y_BED_SIZE
